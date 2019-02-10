@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang= en>
+  <head>
+    <link type="text/css" rel="stylesheet"
+    href="Bridge.css" media="screen">
+      <meta charset=utf-8>
+      <title>Bridge</title>
+      <script>
+      function inputFocus(i) {
+        if (i.value == i.defaultValue) { i.value = ""; i.style.color = "#000"; }
+      }
+      function inputBlur(i) {
+        if (i.value == "") { i.value = i.defaultValue; i.style.color = "#888"; }
+      }
+      </script>
+
+  </head>
+  <body>
+   <nav>
+      <a id="logo" href="#">Bridge</a>
+      <a href="#">Jobs</a>
+      <a href="#">Your Skills</a>
+      <a href="#">Resources</a>
+      <a href="#">About</a>
+    </nav>
+    <div class="box">
+    <article class="box1">
+    <p>
+    <h2>Found your dream job, but don't know what they're looking for?<br></h2>
+
+    <h3>Enter the url of that job you want:
+    <input type = "text"
+          id = "url"
+          style="color:#888;"
+          value = "Enter url"
+          onfocus="inputFocus(this)"
+          onblur="inputBlur(this)" /><br>
+    </h3>
+    <button type="button"><a href="Job-Description.html">Submit</a></button>
+   </p>
+</article>
+  <article class="or">
+        <h2>OR</h2>
+  </article>
+   <article class="box2">
+
+   <p >
+
+    <h2>Still don't know which job you want? Don't worry!</h2>
+
+    <h3>Connect to your LinkedIn or upload resume</h3><br>
+    <div>
+    <img class="linkedin" src="https://neilpatel-qvjnwj7eutn3.netdna-ssl.com/wp-content/uploads/2017/05/LinkedIn.jpg" width="40" height="40">
+    <span class="linktext">LinkedIn</span>
+    <span class="upload">
+        <input type="resume" placeholder="Upload resume">
+        <button type="button"><a href="Resume Evaluator.html">Upload</a></button>
+    </span>
+    </div>
+  </div>
+    <!--Skills:<input type = "text"
+          id = "skills"
+          style="color:#888;"
+          value = "text here"
+          onfocus="inputFocus(this)"
+          onblur="inputBlur(this)" /><br>
+    Interests:<input type = "text"
+          id = "interests"
+          style="color:#888;"
+          value = "text here"
+          onfocus="inputFocus(this)"
+          onblur="inputBlur(this)" /><br>
+    Degree:<input type = "text"
+          id = "degree"
+          style="color:#888;"
+          value = "text here"
+          onfocus="inputFocus(this)"
+          onblur="inputBlur(this)"  /><br>
+
+    <br><button type="button"><a href="#">Submit</a></button>-->
+ </p>
+</article>
+</body>
+</html>
